@@ -206,12 +206,25 @@ export default function Home() {
               transition={{ duration: 0.5, delay: index * 0.05 }}
               className="glass overflow-hidden rounded-3xl shadow-glow"
             >
-              <div className="border-b border-white/10 bg-black/20 p-3">
+              <div className="relative border-b border-white/10 bg-black/20 p-3">
+                <a
+                  href={project.github}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="absolute right-5 top-5 z-10 inline-flex items-center gap-2 rounded-xl border border-white/15 bg-black/70 px-3 py-2 text-sm text-cyan-200 backdrop-blur-md transition hover:border-cyan-400/40"
+                >
+                  <Github className="h-4 w-4" />
+                  GitHub
+                  <ArrowUpRight className="h-4 w-4" />
+                </a>
                 {"screenshots" in project && project.screenshots ? (
                   <div className="grid gap-3 md:grid-cols-3">
                     {project.screenshots.map((src) => (
-                      <div
+                      <a
                         key={src}
+                        href={project.github}
+                        target="_blank"
+                        rel="noreferrer"
                         className="overflow-hidden rounded-2xl border border-white/10"
                       >
                         <Image
@@ -221,11 +234,16 @@ export default function Home() {
                           height={900}
                           className="h-full w-full object-cover object-top"
                         />
-                      </div>
+                      </a>
                     ))}
                   </div>
                 ) : project.screenshot ? (
-                  <div className="overflow-hidden rounded-2xl border border-white/10">
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="block overflow-hidden rounded-2xl border border-white/10"
+                  >
                     <Image
                       src={project.screenshot}
                       alt={`${project.title} screenshot`}
@@ -233,7 +251,7 @@ export default function Home() {
                       height={900}
                       className="h-auto w-full object-cover object-top"
                     />
-                  </div>
+                  </a>
                 ) : null}
               </div>
               <div className="p-6 md:p-8">
