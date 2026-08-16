@@ -19,6 +19,7 @@
 # misc
 .DS_Store
 *.pem
+.cursor/
 capture-screenshots.mjs
 capture-medical.mjs
 medical-logged-in.html
