@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(34, 211, 238, 0.25);
+  color: white;
+}
+
+.glass {
+  @apply border border-white/10 bg-white/[0.03] backdrop-blur-xl;
+}
+
+.section-title {
+  @apply text-3xl font-semibold tracking-tight text-white md:text-4xl;
+}
+
+.section-subtitle {
+  @apply mt-3 max-w-2xl text-base text-slate-400 md:text-lg;
+}
+
+.chip {
+  @apply rounded-full border border-cyan-400/20 bg-cyan-400/10 px-3 py-1 text-xs font-medium text-cyan-200;
+}
