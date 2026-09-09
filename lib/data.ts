@@ -63,6 +63,24 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    id: "ai-debate-panel",
+    title: "AI Debate Panel",
+    github: "https://github.com/PrathamBhat-prog/AI-Debate-Panel",
+    screenshot: "/screenshots/ai-debate-panel.png",
+    stack: [
+      "FastAPI",
+      "Next.js",
+      "OpenAI",
+      "Groq",
+      "WebSockets",
+      "ElevenLabs",
+    ],
+    highlights: [
+      "A GenAI debate room: pick 2–5 AI personas, set a topic, and watch them argue in text or live audio — then jump in yourself.",
+      "Moderated turns, barge-in mic, and minutes of meeting at the end, with OpenAI as primary and Groq as fallback.",
+    ],
+  },
+  {
     id: "stock-analyser",
     title: "AI Stock Analysis Recommendation Platform",
     github:
