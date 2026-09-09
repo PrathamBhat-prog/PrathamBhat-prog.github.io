@@ -121,7 +121,7 @@ export const projects: Project[] = [
     id: "medical-assistant",
     title: "Secure RBAC-Enabled Medical RAG Assistant",
     github:
-      "https://github.com/PrathamBhat-prog/Secure-RBAC-Enabled-Medical-RAG-Assistant",
+      "https://github.com/PrathamBhat-prog/Secure-RBAC-Medical-RAG-Healthcare-Assistant",
     screenshot: "/screenshots/medical-assistant.png",
     stack: [
       "LangChain",
