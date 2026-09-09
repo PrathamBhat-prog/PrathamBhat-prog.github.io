@@ -109,14 +109,15 @@ export const projects: Project[] = [
       "LangChain",
       "Ollama",
       "Pinecone",
-      "MongoDB",
+      "PostgreSQL",
+      "Supabase",
       "FastAPI",
       "Streamlit",
       "Groq",
     ],
     highlights: [
       "Engineered a secure Generative AI Medical Assistant using Retrieval-Augmented Generation (RAG) and LLM, integrating Groq (Llama-3) for cloud inference and Ollama for local embeddings.",
-      "Backed by Pinecone vector search and MongoDB permissions; deployed an interactive Streamlit interface for real-time document querying with role-based access for doctors, nurses, patients, and admins.",
+      "Backed by Pinecone vector search and Supabase PostgreSQL for user/role storage; deployed an interactive Streamlit interface for real-time document querying with role-based access for doctors, nurses, patients, and admins.",
     ],
   },
   {
