@@ -82,9 +82,9 @@ export const projects: Project[] = [
       "MLflow",
     ],
     highlights: [
-      "End-to-end research platform: CatBoost Sniper v5, dual-path sentiment (market proxy at train, live GDELT at inference), VIX features, trend + volatility-risk agents, and horizon-weighted BUY/SELL/HOLD with inverse-vol position sizing.",
-      "Production model predicts ~10-trading-day direction on 32 US and India names (10y). Per-ticker chronological 70/15/15 split, early stopping, validation-only threshold. Held-out test: 53.8% accuracy, ROC-AUC 0.50 — reported honestly; longer UI horizons (21d/63d/126d/252d) are trading-session counts (~252 sessions/year), trend-weighted, not a separate annual ML forecast.",
-      "Served with FastAPI and Gradio; Docker Compose plus AWS (ECR, ECS Fargate, ALB); MLflow training logs and GitHub Actions CI. Educational / research use only — not financial advice.",
+      "Built a full-stack stock analysis platform that combines a CatBoost direction model, technical trend signals, a volatility-risk overlay, news sentiment, and inverse-volatility position sizing into BUY / SELL / HOLD output.",
+      "Trained Sniper v5 on 10 years of prices for 32 US and India listings to estimate the probability that the close is higher after 10 trading sessions. Used a per-ticker chronological 70/15/15 split, CatBoost early stopping, and a classification threshold chosen on validation. Held-out test: 53.8% accuracy, 0.50 ROC-AUC.",
+      "Shipped inference through FastAPI and a Gradio dashboard; containerized with Docker; deployed on AWS (ECR, ECS Fargate, Application Load Balancer); logged training with MLflow and run CI on GitHub Actions.",
     ],
   },
   {
