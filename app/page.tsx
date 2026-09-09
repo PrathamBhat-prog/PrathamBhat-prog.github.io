@@ -193,8 +193,7 @@ export default function Home() {
         <motion.div {...fadeUp}>
           <h2 className="section-title">Projects</h2>
           <p className="section-subtitle">
-            Screenshots from the running applications, plus a post-login view of
-            the medical RAG assistant reconstructed from its Streamlit code.
+            Screenshots from running applications.
           </p>
         </motion.div>
 
